@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Social Media Website">
+        <meta name="description" content="Social Media Website">
+        <meta name="author" content="Tomiwa-Philip">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Load all stylesheets here-->
+        <link rel="stylesheet" href="styles/w3.css">
+        <link rel="stylesheet" href="styles/w3-theme-teal.css">
+        <link rel="stylesheet" href="Font awesome/fontawesome/css/all.css">
+        <!--This is the title-->
+        <title>Kingmedia</title>
+    </head>
+
+    <!--This is the body-->
+    <body class="w3-theme-l5">
+        <!--Quickly add some styles-->
+        <style>
+            html, body, h1, h2, h3, h4, h5, h6 {font-family: 'Trebuchet MS' 'sans-serif';}
+            .w3-mydes:hover {transition:1s;}
+        </style>
+
+        <!--Make the Navigation Bar-->
+        <div class="w3-top" style="margin: 0;">
+            <div class="w3-bar w3-theme-d2">
+                <div class="w3-bar-item w3-button w3-xlarge w3-padding-large w3-theme-d5 w3-hover-theme w3-mydes"><a href="#" style="text-decoration: none;"> <i class="fa-solid fa-home"></i> <span class="w3-hide-small"> HOME</span> </a></div>
+                <div class="w3-bar-item w3-button w3-xlarge w3-padding-large w3-hover-theme w3-mydes"><a href="#" style="text-decoration: none;"> <i class="fa-solid fa-globe"></i> </a></div>                
+                <div class="w3-bar-item w3-button w3-xlarge w3-padding-large w3-hover-theme w3-mydes"><a href="#" style="text-decoration: none;"> <i class="fa-solid fa-user"></i> </a></div>                
+                <div class="w3-bar-item w3-button w3-xlarge w3-padding-large w3-hover-theme w3-mydes"><a href="#" style="text-decoration: none; "> <i class="fa-solid fa-envelope"></i> </a></div>                
+                <div class="w3-bar-item w3-button w3-dropdown-hover w3-xlarge w3-padding-large w3-hover-theme w3-mydes"><a href="#" style="text-decoration: none;"> <i class="fa-solid fa-bell"></i> <span class="w3-green w3-badge w3-small w3-right">3</span> </a>                
+                    <div class="w3-dropdown-content w3-card-4 w3-bar-block w3-medium w3-theme-d2 w3-hide-small w3-animate-opacity" style="width:300px;">
+                    <a href="#" class="w3-bar-item w3-button"> <img src="images/avatar5.png" alt="newfriend" class="w3-circle" style="width: 24px; margin-right: 6px;"> One new friend request</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="images/avatar3.png" alt="newfriend" class="w3-circle" style="width: 24px; margin-right: 10px;">Philip posted on your wall</a>
+                    <a href="#" class="w3-bar-item w3-button"><img src="images/avatar6.png" alt="newfriend" class="w3-circle" style="width: 24px; margin-right: 10px;">David likes your post</a>
+                    </div>
+                </div>
+                <div class="w3-bar-item w3-padding-large w3-hide-small w3-right w3-hover-theme w3-mydes"><a href="#"><img src="images/avatar2.png" alt="Account settings" class="w3-circle" style="width:35px; height:35px;"></a></div>
+            </div>                    
+        </div>
+
+        <!--Now make the page container-->
+        <div class="w3-container w3-content" style="max-width: 1400px; margin-top: 80px;">
+            <!--Make the columns-->
+            <div class="w3-row-padding">
+                <!--Make the first column-->
+                <div class="w3-col m3">
+                    <!--The profile-->
+                    <div class="w3-card w3-white w3-round">
+                        <div class="w3-container">
+                            <h4 class="w3-center"> <b>My Profile</b> </h4>
+                            <p class="w3-center w3-large"><img src="images/avatar3.png" alt="your-image" class="w3-circle" style="width:106px;height:106px;"> <br> <b>Tomiwa Philip</b> </p>
+                            <hr>
+                            <h5> <i class="fa-solid fa-pencil fa-fw" style="margin-right: 20px;"></i> Website Designer </h5>
+                            <h5> <i class="fa-solid fa-home fa-fw" style="margin-right: 20px;"></i> Lagos, Nigeria </h5>
+                            <h5> <i class="fa-solid fa-birthday-cake fa-fw" style="margin-right: 20px;"></i> April 5, 2013 </h5>
+                        </div>
+                    </div>
+                    <br>
+
+                    <!--Make the Accordions-->
+                    <div class="w3-card w3-theme-d2">
+                        <button onclick="myFunction('Demo1')" class="w3-button w3-hover-theme w3-mydes" style="width: 100%; text-align: left;"><i class="fa fa-circle-notch fa-fw w3-margin-right"></i>My Groups</button>
+                        <div id="Demo1" class="w3-hide w3-container w3-white w3-animate-opacity">
+                            <ul class="w3-ul">
+                                <li> <i class="fa-solid fa-globe"></i> The Web Design Team</li>
+                                <li> <i class="fa-solid fa-diamond"></i> The Lovers of God</li>
+                                <li> <i class="fa-solid fa-user"></i> God bless Us</li>
+                            </ul>
+                        </div>
+                        <button onclick="myFunction('Demo2')" class="w3-button w3-hover-theme w3-mydes" style="width: 100%; text-align: left;"> <i class="fa fa-calendar-check fa-fw w3-margin-right"></i>My Events</button>
+                        <div id="Demo2" class="w3-hide w3-container w3-white w3-animate-opacity">
+                            <ul class="w3-ul">
+                                <li> <i class="fa-solid fa-music"></i> The Light Music Concert</li>
+                                <li> <i class="fa-solid fa-fire"></i> 10 Hours of Incense</li>
+                                <li> <i class="fa-solid fa-heart"></i> Dara weds Lawrence</li>
+                            </ul>
+                        </div>
+                        <button onclick="myFunction('Demo3')" class="w3-button w3-hover-theme w3-mydes" style="width: 100%; text-align: left;"> <i class="fa fa-users fa-fw w3-margin-right"></i>Recent Photos</button>
+                        <div id="Demo3" class="w3-hide w3-container w3-white w3-animate-opacity">
+                            <div class="w3-row-padding">
+                                <div class="w3-half w3-padding-me">
+                                    <img src="images/1.PNG" alt="spokenword" style="width: 100%; margin-bottom:5px;">
+                                </div>
+                                <div class="w3-half">
+                                    <img src="images/2.png" alt="apostle" style="width: 100%; margin-bottom:5px;">
+                                </div>
+                                <div class="w3-half">
+                                    <img src="images/3.jpeg" alt="lion" style="width: 100%;margin-bottom:5px;">
+                                </div>
+                                <div class="w3-half">
+                                    <img src="images/4.png" alt="book" style="width: 100%;margin-bottom:5px;">
+                                </div>
+                                <div class="w3-half">
+                                    <img src="images/5.png" alt="banner" style="width: 100%;margin-bottom:5px;">
+                                </div>
+                                <div class="w3-half">
+                                    <img src="images/6.jpg" alt="background" style="width: 100%;margin-bottom:5px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    
+                    <!--Make the interest card and tags-->
+                    <div class="w3-card w3-container w3-row-padding w3-white">
+                        <h4 class="w3-center"><b>My Interests</b></h4>
+                        <p><span class="w3-tag w3-small w3-theme-d5">News</span>
+                        <span class="w3-tag w3-small w3-theme-d4">Sports</span>
+                        <span class="w3-tag w3-small w3-theme-d4">Love</span>
+                        <span class="w3-tag w3-small w3-theme-d3">Romance</span>
+                        <span class="w3-tag w3-small w3-theme-d2">Games</span>
+                        <span class="w3-tag w3-small w3-theme-d1">Arts</span>
+                        <span class="w3-tag w3-small w3-theme-l1">Website Design</span>
+                        <span class="w3-tag w3-small w3-theme-l2">Names</span>
+                        <span class="w3-tag w3-small w3-theme-l3">Schools</span>
+                        <span class="w3-tag w3-small w3-theme-l4">Friends</span>
+                        <span class="w3-tag w3-small w3-theme-l5">Church</span></p>
+                    </div> <br>
+                    
+                    <!--Make the alert box-->
+                    <div class="w3-container w3-display-container w3-round w3-border w3-theme-l4 w3-border-theme">
+                        <span class="w3-display-topright w3-button w3-round w3-theme-d1 w3-hover-red w3-mydes" onclick="this.parentElement.style.display='none'"> <i class="fa-solid fa-remove"></i> </span>
+                        <h5><strong>Hey!</strong></h5>
+                        <p>A lot of people are waiting for you in the group, please check it out!</p>
+                    </div>
+                </div>
+                <!--This is the end of the first column-->
+
+                <!--Make the Second column now-->
+                <div class="w3-col m7">
+                    <!--Make the post your post section-->
+                    <div class="w3-card w3-round w3-container w3-white w3-padding">
+                        <h5 class="w3-opacity">Post something on your wall</h5>
+                        <form action="#">
+                            <textarea name="post" placeholder="What are you thinking?" class="w3-border w3-round w3-border-theme" style="width: 100%; height: 80px;"></textarea>
+                            <button class="w3-button w3-theme-d5 w3-padding w3-hover-theme w3-round w3-mydes"> <i class="fa-solid fa-pen"></i> Post </button>
+                        </form>
+                    </div> <br>
+
+                    <!--Make a post by someone-->
+                    <div class="w3-card w3-round w3-container w3-padding w3-white">
+                        <h4><span><img src="images/avatar6.png" alt="Happiness Ooreluwa" class="w3-circle" style="width: 50px"> <b>Happiness Ooreluwa</b> </span>  <span class="w3-right w3-opacity w3-small">1 min ago</span></h4>
+                        <p>We all know God is good. Yeah, we do. I wan t to introduce to you the Kindgom of God. And I would love you to follow along. God is the Creator-King, a Mighty King that created the heavens and the earth. After seven days of His work he rested and blessed the seventh day. What lesson is there to learn from this? Work while it is day, and rest at nights! <br>I would love to see your comments and reactions! See pictures. Thank you. &#x1F618;</p>
+                        <div class="w3-row-padding">
+                            <div class="w3-half">
+                                <img src="images/post1.jpg" alt="Tomiwa-Philip" style="width: 100%;">
+                            </div>
+                            <div class="w3-half">
+                                <img src="images/post2.jpg" alt="Odunade-shola" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="w3-margin-top">
+                            <button class="w3-button w3-theme-d5 w3-padding w3-hover-theme w3-round w3-mydes"> <i class="fa-solid fa-thumbs-up"></i> Like </button>
+                            <button class="w3-button w3-theme-d5 w3-padding w3-hover-theme w3-round w3-mydes"> <i class="fa-solid fa-comment"></i> Comment </button>
+                        </div>
+                    </div> <br>
+
+                    <!--Make another post by someone-->
+                    <div class="w3-card w3-round w3-container w3-padding w3-white">
+                        <h4><span><img src="images/avatar3.png" alt="Tomiwa Philip" class="w3-circle" style="width: 50px"> <b>Tomiwa Philip</b> </span>  <span class="w3-right w3-opacity w3-small">5 min ago</span></h4>
+                        <p><B>EMI NI DAFIDI!!!</B></p>
+                        <div class="w3-row-padding">
+                            <div class="w3-half">
+                                <img src="images/post3.jpg" alt="Tomiwa-Philip" style="width: 100%;">
+                            </div>
+                            <div class="w3-half">
+                                <img src="images/post1.jpg" alt="Tomiwa-Philip" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="w3-margin-top">
+                            <button class="w3-button w3-theme-d5 w3-padding w3-hover-theme w3-round w3-mydes"> <i class="fa-solid fa-thumbs-up"></i> Like </button>
+                            <button class="w3-button w3-theme-d5 w3-padding w3-hover-theme w3-round w3-mydes"> <i class="fa-solid fa-comment"></i> Comment </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Make the last column-->
+                <div class="w3-col m2">
+                    <!--Make the upcoming event section-->
+                    <div class="w3-card w3-container w3-center w3-round w3-padding w3-white">
+                        <h4 class="w3-center">Upcoming Events:</h4>
+                        <img src="images/5.png" alt="webdesign" style="width: 100%;">
+                        <p class="w3-center">Tomiwa Philip Web Design Tutorial</p>
+                        <p class="w3-center">Monday | 12:00PM GMT +1:00 WAT</p>
+                        <button class="w3-button w3-center w3-theme-d5 w3-padding w3-hover-theme w3-mydes">More...</button>
+                    </div> <br>
+
+                    <!--Make the friend request section-->
+                    <div class="w3-card w3-container w3-round w3-center w3-padding w3-white">
+                        <h4>Friend Request</h4>
+                        <img src="images/avatar6.png" alt="blessingavatar" style="width: 50%;">
+                        <p>Blessing Ooreofe</p>
+                        <button class="w3-button w3-center w3-theme-d5 w3-padding w3-hover-theme w3-mydes" onclick="this.parentElement.style.display='none'"> <i class="fa-solid fa-check"></i> </button><button class="w3-button w3-center w3-red w3-padding w3-hover-red w3-mydes" onclick="this.parentElement.style.display='none'"><i class="fa-solid fa-remove"></i></button>
+                    </div> <br>
+
+                    <!---Make the Ads section-->
+                    <div class="w3-card w3-container w3-round w3-center w3-padding w3-white w3-display-container">
+                        <h4>Ads</h4>
+                        <span class="w3-display-topright w3-button w3-hover-red w3-theme-d5 w3-mydes" onclick="this.parentElement.style.display='none'"> <i class="fa-solid fa-remove"></i> </span>
+                        <img src="images/5.png" alt="webdesign" style="width: 100%;">
+                        <p>Buy Tomiwa Philip Web Design Course for $50K Now!</p>
+                        <button class="w3-button w3-center w3-theme-d5 w3-padding w3-hover-theme w3-mydes">Click here</button>
+                    </div>
+                </div>
+            </div>
+        </div> <br>
+
+        <!--Now make the footer-->
+        <footer class="w3-theme-d2 w3-container w3-center">
+            <p><b>This Social Media Website is designed by Tomiwa Philip in 2022. All pictures used are owned by Tomiwa Philip and W3School. Thank you!</b></p>
+        </footer>
+    
+    
+    
+    
+    
+    <script>
+        function myFunction(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        } else {
+        x.className = x.className.replace(" w3-show", "");
+        }
+        }
+    </script>
+    </body>
+
+</html>
